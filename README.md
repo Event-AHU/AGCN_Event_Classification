@@ -1,5 +1,7 @@
 # AGCN_Event_Classification 
-Official PyTorch implementation of "**Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition**". 
+Official PyTorch implementation of "Jiang, Bo and Yuan, Chengguo and Wang, Xiao and Bao, Zhimin and Zhu, Lin and Tian, Yonghong and Tang, Jin (2023). **Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition**. arXiv preprint arXiv:2306.05239." 
+[[Paper](https://arxiv.org/abs/2306.05239)] 
+
 
 
 ## Abstract 
