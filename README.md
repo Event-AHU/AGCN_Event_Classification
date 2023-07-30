@@ -11,7 +11,7 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
 ## Our Proposed Framework 
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/framework.jpg" alt="Framework"/>
+  <img width="90%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/framework.jpg" alt="Framework"/>
 </p> 
 
 ## Environment Setting 
@@ -25,12 +25,12 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
 ## Experimental Results 
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/feature_vis.jpg" alt="feature_vis"/>
+  <img width="90%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/feature_vis.jpg" alt="feature_vis"/>
 </p> 
 
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/top5_hardvs.jpg" alt="top5_hardvs"/>
+  <img width="90%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/top5_hardvs.jpg" alt="top5_hardvs"/>
 </p> 
 
 ## Acknowledgement 
