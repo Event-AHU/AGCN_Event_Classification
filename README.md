@@ -15,22 +15,30 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
 </p> 
 
 ## Environment Setting 
-Python 3.8
-Pytorch 
-numpy
-scipy
-Pytorch Geometric
-torch-cluster 1.5.9
-torch-geometric 1.7.0
-torch-scatter 2.0.6
-torch-sparse 0.6.9
-torch-spline-conv 1.2.1
-Matlab
+    Python 3.8
+    Pytorch 
+    numpy
+    scipy
+    Pytorch Geometric
+    torch-cluster 1.5.9
+    torch-geometric 1.7.0
+    torch-scatter 2.0.6
+    torch-sparse 0.6.9
+    torch-spline-conv 1.2.1
+    Matlab
 ## Dataset Download and Pre-processing 
-
+    DVS128-Gait-Day:https://pan.baidu.com/s/1F3Uo-fVy1S7n5plmEXFl4w,extraction code: mk55
+    ASL-DVS:https: //www.dropbox.com/sh/ibq0jsicatn7l6r/AACNrNELV56rs1YInMWUs9CAa?dl=0
+    N-MNIST: https://www.garrickorchard.com/datasets/n-mnist
+### center-point to graph
+    python p2g.py
+### voxel to graph
+    python v2g.py
 ## Training and Testing 
-
-
+    train
+    CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --master_port 4789 --nproc_per_node=1 train_p_v.py --epoch 150 --batch_size 16 --num_works 8
+    test
+    CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 test_p_v_graph.py --model_name xxx.pkl --batch_size 8
 ## Experimental Results 
 
 <p align="center">
