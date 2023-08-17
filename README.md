@@ -15,8 +15,17 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
 </p> 
 
 ## Environment Setting 
-
-
+Python 3.8
+Pytorch 
+numpy
+scipy
+Pytorch Geometric
+torch-cluster 1.5.9
+torch-geometric 1.7.0
+torch-scatter 2.0.6
+torch-sparse 0.6.9
+torch-spline-conv 1.2.1
+Matlab
 ## Dataset Download and Pre-processing 
 
 ## Training and Testing 
