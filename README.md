@@ -50,10 +50,10 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
   <img width="90%" src="https://github.com/Event-AHU/AGCN_Event_Classification/blob/main/figure/top5_hardvs.jpg" alt="top5_hardvs"/>
 </p> 
 
-## Acknowledgement 
 
 
 ## Citation 
+If you find this work helps your research, please cite the following paper and give us a **star**. 
 ```bibtex
 @article{jiang2023eventAGCN,
   title={Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition},
@@ -62,6 +62,4 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
   year={2023}
 }
 ```
-
-
 if you have any problems with this work, please leave an issue. 
