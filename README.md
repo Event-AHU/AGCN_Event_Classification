@@ -25,14 +25,23 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
     torch-scatter 2.0.6
     torch-sparse 0.6.9
     torch-spline-conv 1.2.1
+    spconv 2.3.3
     Matlab
 ## Dataset Download and Pre-processing 
     DVS128-Gait-Day:https://pan.baidu.com/s/1F3Uo-fVy1S7n5plmEXFl4w,extraction code: mk55
     ASL-DVS:https: //www.dropbox.com/sh/ibq0jsicatn7l6r/AACNrNELV56rs1YInMWUs9CAa?dl=0
     N-MNIST: https://www.garrickorchard.com/datasets/n-mnist
-### center-point to graph
+### Non_UPS_Downsample and Voxelization
+    The ASL data set is used as an example to downsample the source file.
+    cd downsample/ASL_Non-UPS_downsample
+    matlab -nodesktop -nosplash -r "main, exit()"
+    cd voxelization
+    python raw2voxel.py
+### generate absorbing graph
+    cd generate_graph
+    center point to absorbing graph
     python p2g.py
-### voxel to graph
+    voxel to absorbing graph
     python v2g.py
 ## Training and Testing 
     train
