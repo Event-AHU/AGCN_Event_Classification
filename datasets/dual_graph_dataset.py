@@ -13,9 +13,7 @@ from torch_geometric.data import Data, Dataset
 import os.path as osp
 from PIL import Image
 import random
-# import voxel
-# import geome
-# import tri
+
 
 
 def files_exist(files):
@@ -32,11 +30,11 @@ class EV_Gait_3DGraph_Dataset(Dataset):
         self.train_test = mode
         self.split = split
         
-        self.branch_v = 'v2g_2048_r2_0419'
+        self.branch_v = 'voxel2geometric'
         self.labels = []
         self.G_path_list=[]
         if self.split == 'txt':
-            txt_file = os.path.join(self.root,'Har_{}.txt'.format(self.train_test))
+            txt_file = os.path.join(self.root,'ASL_{}.txt'.format(self.train_test))
 
             with open(txt_file,'r') as anno_file:
                 while(1):
@@ -76,7 +74,7 @@ class EV_Gait_3DGraph_Dataset(Dataset):
     def __getitem__(self, idx):
         v_file_path = self.G_path_list[idx]
         data_v = torch.load(v_file_path)
-        data_p = torch.load(v_file_path.replace('v2g_2048_r2_0419','p2g_max40_r5_0419_2'))
+        data_p = torch.load(v_file_path.replace('voxel2geometric','point2geometric'))
     
         if self.transform is not None:
             data_v = self.transform(data_v)
