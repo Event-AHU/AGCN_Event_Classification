@@ -1,5 +1,5 @@
 # AGCN_Event_Classification 
-Official PyTorch implementation of "Jiang, Bo and Yuan, Chengguo and Wang, Xiao and Bao, Zhimin and Zhu, Lin and Tian, Yonghong and Tang, Jin (2023). **Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition**. arXiv preprint arXiv:2306.05239." 
+Official PyTorch implementation of "**Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition**. arXiv preprint arXiv:2306.05239.", Yuxiang Zhang, Chengguo Yuan, Xiao Wang, Bo Jiang, Jin Tang, 
 [[Paper](https://arxiv.org/abs/2306.05239)] 
 
 
@@ -64,11 +64,14 @@ Sampled point and voxel methods are usually employed to downsample the dense eve
 ## Citation 
 If you find this work helps your research, please cite the following paper and give us a **star**. 
 ```bibtex
-@article{jiang2023eventAGCN,
-  title={Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition},
-  author={Jiang, Bo and Yuan, Chengguo and Wang, Xiao and Bao, Zhimin and Zhu, Lin and Tian, Yonghong and Tang, Jin},
-  journal={arXiv preprint arXiv:2306.05239},
-  year={2023}
+@misc{zhang2026eventAGCN,
+      title={Point-Voxel Absorbing Graph Representation Learning for Event Stream based Recognition}, 
+      author={Yuxiang Zhang and Chengguo Yuan and Xiao Wang and Bo Jiang and Jin Tang},
+      year={2026},
+      eprint={2306.05239},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2306.05239}, 
 }
 ```
 if you have any problems with this work, please leave an issue. 
